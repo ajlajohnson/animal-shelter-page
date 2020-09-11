@@ -1,0 +1,15 @@
+<form #animalForm="ngForm" (ngSubmit)="addAnimal(animalForm)">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" ngModel />
+
+    <label for="age">Age</label>
+    <input type="number" id="age" name="age" ngModel />
+
+    <label for="yes">Yes</label>
+    <input type="radio" id="yes" name="isVaccinated" value="true" ngModel />
+
+    <label for="no">No</label>
+    <input type="radio" id="no" name="isVaccinated" value="false" ngModel />
+
+    <button>Add</button>
+</form>
